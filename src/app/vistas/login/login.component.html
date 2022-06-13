@@ -1,0 +1,46 @@
+<section class="vh-100 bg-image"
+        style="background-image: url('https://oij.org/wp-content/uploads/2018/03/fondo-Azul.png');">
+        <div class="d-flex justify-content-center h-100">
+            <div class="user_card">
+                <div class="d-flex justify-content-center">
+                    <div class="brand_logo_container">
+                        <img src="https://scontent-bog1-1.xx.fbcdn.net/v/t1.6435-9/82446685_1648728488602012_1933620759427547136_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=W4iQwYcobM4AX-geW9t&_nc_oc=AQk5UGZ4KZUN-j-pka2de_OIl2M87sHtL1-M0lofgQ5SJcKE3pHUX4LVbLPl4EqMj8k&_nc_ht=scontent-bog1-1.xx&oh=00_AT-qWhuNNZIIGIXMWWf5yimLMr_pybtHWIkwbBUIJ6Kx_w&oe=62B2B3FD" class="brand_logo" alt="Logo">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center form_container">
+                    <form [formGroup]="loginForm"(ngSubmit)="onLogin(loginForm.value)">
+                        <div class="input-group mb-3">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>   
+                            </div>
+                            <input type="number" (keydown.space)="$event.preventDefault();" required   class="form-control input_user"  placeholder="Cedula" formControlName="id" >
+                            
+                          
+                        </div>
+                        
+                          
+                        <div class="input-group mb-2">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password"  class="form-control input_pass" value="" placeholder="Contraseña" formControlName="contraseña" >
+                        </div>
+                        
+                        
+                        <div class="d-flex justify-content-center mt    -3 login_container">
+                            <button type="submit" name="button" class="btn login_btn" >Login as admin</button>
+                        </div>
+                    </form>
+               
+                </div>
+    
+                <div class="mt-4">
+                    <div class="d-flex justify-content-center links">
+                        Crea una nueva cuenta <a href="register-user" class="ml-2">CREAR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</section>
+
