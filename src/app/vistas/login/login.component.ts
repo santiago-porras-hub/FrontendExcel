@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
 
       } else if(data.message=="Ingresado usuario"){
 
-        this.router.navigate(['dashboard-admin']);
+        this.router.navigate(['dashboard-user']);
         this.alerta.showSucces('Logeado','Correctamente USUARIO');
 
       }else {

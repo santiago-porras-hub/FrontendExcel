@@ -48,7 +48,7 @@ export class ApiService {
     return this.hhtp.get<listaI[]>(direction);
   }
   obtainUser(id:any):Observable<usuarioI>{
-    let direction=this.url+"/user/id?id="+id;
+    let direction=this.url+"/user/obtenerid?id="+id;
     return this.hhtp.get<usuarioI>(direction)
   }
 
