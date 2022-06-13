@@ -30,7 +30,7 @@
                     <a class="nav-link" href="dashboard-admin">
                         <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                         Vista general
-                    </a>
+                    </a> 
                     <div class="sb-sidenav-menu-heading">Interactuar</div>
                     <a class="nav-link" href="tablas">
                         <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
@@ -47,22 +47,33 @@
     <div id="layoutSidenav_content">
         <main>
             <div class="container-fluid px-4">
-                <h1 class="mt-4">Usario</h1>
+                <h1 class="mt-4">Usuario</h1>
                 <ol class="breadcrumb mb-4">
                     <li class="breadcrumb-item active">Usuario</li>
                 </ol>
-<input type="file" (change)="onFileChange($event)" multiple="false"/>
-<div class>
-    <table class="table table-striped table-bordered table-hover">
-
-        <tbody>
-            <tr *ngFor="let row of data">
-    
-                <td *ngFor="let cell of row">
-                    {{cell}}
-                </td>
-            </tr>
-        </tbody>
-    </table>
+               
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <i class="fas fa-table me-1"></i>
+                        Lista de usuarios
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-primay" > Nuevo usuario</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="py-4 bg-light mt-auto">
+            <div class="container-fluid px-4">
+                <div class="d-flex align-items-center justify-content-between small">
+                    <div class="text-muted">Copyright &copy; Your Website 2022</div>
+                    <div>
+                        <a href="#">Privacy Policy</a>
+                        &middot;
+                        <a href="#">Terms &amp; Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 </div>
-

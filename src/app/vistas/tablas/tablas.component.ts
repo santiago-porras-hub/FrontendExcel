@@ -25,7 +25,7 @@ export class TablasComponent implements OnInit {
     const target:DataTransfer=<DataTransfer>(evt.target);
 
     if(target.files.length !==1){
-      this.router.navigate(['dashboard-admin']);
+      this.router.navigate(['dashboard-user']);
       this.alerta.showError('Incorrecto','Solo se puede un archivo a la vez  ');
     }
 

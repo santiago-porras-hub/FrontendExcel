@@ -17,6 +17,7 @@ import { EditarComponent } from './vistas/editar/editar.component';
 import { EliminarComponent } from './vistas/eliminar/eliminar.component';
 import { EditUserComponent } from './vistas/edit-user/edit-user.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { DashboardUserComponent } from './vistas/dashboard-user/dashboard-user.component';
 
 
 
@@ -32,7 +33,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
     GraficasComponent,
     EditarComponent,
     EliminarComponent,
-    EditUserComponent
+    EditUserComponent,
+    DashboardUserComponent
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,7 @@ import { TablasComponent } from './vistas/tablas/tablas.component';
 import { EliminarComponent } from './vistas/eliminar/eliminar.component';
 import { EditarComponent } from './vistas/editar/editar.component';
 import { EditUserComponent } from './vistas/edit-user/edit-user.component';
+import { DashboardUserComponent } from './vistas/dashboard-user/dashboard-user.component';
 
 const routes: Routes = [
 
@@ -19,7 +20,9 @@ const routes: Routes = [
   {path:'graficas',component:GraficasComponent},
   {path:'editar', component:EditarComponent},
   {path:'eliminar', component:EliminarComponent},
-  {path:'editarUser/:id',component:EditUserComponent}
+  {path:'editarUser/:id',component:EditUserComponent},
+  {path:'dashboard-user',component:DashboardUserComponent}
+  
 ];
 
 @NgModule({
